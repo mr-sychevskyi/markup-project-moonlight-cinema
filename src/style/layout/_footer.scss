@@ -1,0 +1,35 @@
+.footer {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	
+	background-color:  #f4adaa;
+	
+	&__copyright {	
+		padding: 0 10px;
+
+		font-size: 15px;
+		color:  #b26562;
+	}
+		
+	
+	&__nav {
+		display: inline-block;
+		padding: 0 6px;
+		
+		border-left: 1px solid #b26562;
+		
+		&_link {
+			font-size: 15px;
+			color:  #b26562;
+
+			border-bottom: 1px solid transparent;
+			border-bottom-color: #b26562;
+			transition: all 0.3s;
+		}
+
+		&_link:hover {
+			color:  darken( #b26562, 50%);
+			border-color: darken( #b26562, 50%);
+		}	
+	}
+}
