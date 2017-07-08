@@ -23,9 +23,7 @@
 	.banner__title {
 		padding: 150px 0;
 		
-		&-item { 
-			font-size: 45px;
-		}
+		&-item { font-size: 45px; }
 	}
 	
 	.advertise {
@@ -72,26 +70,24 @@
  
 
 @media only screen and (max-width: 576px) {
-		
-	.main__section_title h2 {
-		font-size: 22px;
-	}
+
+	.banner__title-item { padding: 0; }
 	
-	.venues__item_wrapper  {
-		display: flex;
-		
-		.btn__icon { padding: 10px; }
-		
-		
-	}
+	.main__section_title h2 { font-size: 22px; }
 	
 	.cinebuzz {	
-		.btn { width: 100%; }
+		.btn { 
+			width: 100%; 
+			margin: 0;
+		}
 		
 		.btn:first-of-type { margin-bottom: 12px; }
 	}  
 	
-	.venues .venues__item_info { left: 0; }
+	.venues .venues__item_wrapper  {
+		.venues__item_info { left: 15px; }
+		.btn__icon { padding: 10px; }
+	}
 	
 	.social {
 		
@@ -111,7 +107,7 @@
 	}
 	
 	.footer {
-		padding-bottom: 5px;
+		padding-bottom: 10px;
 		
 		&__copyright {
 			width: 100%;
