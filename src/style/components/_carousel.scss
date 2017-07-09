@@ -1,0 +1,32 @@
+// CAROUSEL
+
+.carousel__inner { 
+	width: 95%;
+	margin: 0 auto;
+}; 
+
+.carousel__control {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+    width: 65px;
+	height: 70px;
+	
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	
+	color: #000;
+	background-color:  #564b86;
+		
+	i { color: #fff;}
+	
+	&:hover { 
+		opacity: 0.7;
+		cursor: pointer;
+	}
+}
+
+.prev-arrow { left: -70px; }
+.next-arrow { right: -70px; }
