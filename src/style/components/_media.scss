@@ -6,10 +6,11 @@
 
 @media only screen and (max-width: 992px) {
 	.social {
-		.prev-btn, .next-btn { top: 30%; }
-		
-		.carousel-control.right { right: -25px; }
-		.carousel-control.left  { left: -25px; }
+		.carousel__inner { width: 90%; }
+
+		.carousel__control { width: 55px; }
+		.prev-arrow  { left: -60px; }
+		.next-arrow  { right: -60px; }
 	}
 	
 	.footer__nav {
@@ -23,9 +24,7 @@
 	.banner__title {
 		padding: 150px 0;
 		
-		&-item { 
-			font-size: 45px;
-		}
+		&-item { font-size: 45px; }
 	}
 	
 	.advertise {
@@ -51,19 +50,12 @@
 	}
 	
 	.social {
-		.carousel-control {
-			top: 15%;
-			width: 50px;
-			padding: 45px 0;
-			
-			background: none;
-			color: #f2f2f2;
-			
-			&.right { right: 0; }
-			&.left  { left: 0; }
-		}
+		.carousel__inner { width: 85%; }
+		
+		.prev-arrow  { left: -55px; }
+		.next-arrow  { right: -55px; }
 	}
-	
+		
 	.footer__nav {
 		margin-top: 0px;
 		li { margin-top: 20px; }
@@ -72,46 +64,42 @@
  
 
 @media only screen and (max-width: 576px) {
-		
-	.main__section_title h2 {
-		font-size: 22px;
-	}
+
+	.banner__title-item { padding: 0; }
 	
-	.venues__item_wrapper  {
-		display: flex;
-		
-		.btn__icon { padding: 10px; }
-		
-		
-	}
+	.main__section_title h2 { font-size: 22px; }
 	
 	.cinebuzz {	
-		.btn { width: 100%; }
+		.btn { 
+			width: 100%; 
+			margin: 0;
+		}
 		
 		.btn:first-of-type { margin-bottom: 12px; }
 	}  
 	
-	.venues .venues__item_info { left: 0; }
+	.venues .venues__item_wrapper  {
+		.venues__item_info { left: 15px; }
+		.btn__icon { padding: 10px; }
+	}
 	
 	.social {
 		
-		.carousel-inner {
-			display: block;
-			overflow-x: scroll;		
-			
-			img {
-				min-width: 180px;
-				min-height: 150px;
+		.carousel__inner {
+			.carousel__control { 
+				width: 30px; 
+				background: transparent; 
 			}
-		}
-		
-		.carousel-control {
-			display: none;
+			
+			.prev-arrow  { left: -35px; }
+			.next-arrow  { right: -35px; }
+			
+			img { width: 100%; }
 		}
 	}
 	
 	.footer {
-		padding-bottom: 5px;
+		padding-bottom: 10px;
 		
 		&__copyright {
 			width: 100%;
