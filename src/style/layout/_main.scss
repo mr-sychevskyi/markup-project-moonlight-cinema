@@ -60,7 +60,7 @@
 .venues {
 	
 	&__title { color:  #010101; }
-
+	
 	&__body {
 		background-color:  #f2f2f2;	
 		padding: 60px 0;
@@ -80,6 +80,7 @@
 
 			background-size: cover;
 			border-radius: 2px;
+			transition: all 0.4s;
 			
 			.venues__item_info {
 				position: absolute;
@@ -167,7 +168,7 @@
 			padding: 0;
 		}
 		
-		.multi-item-carousel {
+		.carousel__inner {
 			margin-top: 25px;
 			margin-bottom: 40px;
 		}
