@@ -3,11 +3,15 @@
 	'base/add-styles';
 
 @import 
-	'layout/header',
 	'layout/main',
 	'layout/footer';
 
 @import 
-	'components/buttons',  
+	'vendor/slick',
+	'vendor/slick-theme';
+
+@import 
+	'components/buttons', 
+	'components/carousel',
 	'components/media';
 
