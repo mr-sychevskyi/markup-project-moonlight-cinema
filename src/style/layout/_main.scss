@@ -140,17 +140,15 @@
 	&__title { color:  #fff; }
 	
 	&__body {
-		padding-top: 70px;
-		padding-bottom: 35px;
+		padding: 70px 0;
 		
 		background-color:  #655999;
 	
 		li { margin-right: 25px; }	
 		
+		.sponsors_list div:first-child { margin-bottom: 60px; }
+		
 		.list-inline {
-
-			&:first-child { margin-bottom: 60px; }
-
 			&__link img { transition: transform 0.5s; }
 
 			&__link:hover { img {	transform: scale(1.1); } }	
