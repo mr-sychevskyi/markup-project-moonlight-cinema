@@ -49,22 +49,6 @@ $(function () {
 	
 	// OVERLAY_CLOSED-VENUE
 	$('.closed .venues__item_info').prepend('<img src="img/venue-disabled.png" alt="venue_closed">');
-	
 	$('.closed .venues__item_info .btn__icon').html('Find out more');
-	
-	
-	// VENUES__LINK
-	$('.venues__item_wrapper').each(function(){
-		$(this).click( function() {
-			location = $(this).find('a').attr('href');
-		});
-		$(this).mouseover( function() {
-			$(this).css('box-shadow','0px 0px 20px 2px rgba(50,50,50,0.8)');			
-		});
-		$(this).mouseout( function() {
-			$(this).css('box-shadow','none');			
-		});
-		$(this).css('cursor','pointer');
-	});
 	
 });
